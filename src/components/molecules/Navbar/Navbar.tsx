@@ -9,25 +9,20 @@ type NavbarProps = {
 };
 
 function Navbar({ links }: NavbarProps) {
-  const link = links[0];
-  console.log(link);
   return (
     <StyledNavbar>
       <WrapperContainer>
         <InnerNavbar>
           <Logo />
-          <a
-            href={link.url}
-            onClick={() => {
-              document
-                .getElementById('cta')
-                ?.scrollIntoView({ behavior: 'smooth', block: 'start' });
-            }}
-          >
-            <Text as="span" variant="paragraph">
-              {link.text}
-            </Text>
-          </a>
+          {links.map(link => {
+            return (
+              <a key={link.url} href={link.url}>
+                <Text as="span" variant="paragraph">
+                  {link.text}
+                </Text>
+              </a>
+            );
+          })}
         </InnerNavbar>
       </WrapperContainer>
     </StyledNavbar>
