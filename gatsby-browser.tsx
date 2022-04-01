@@ -3,6 +3,7 @@ import type { GatsbyBrowser } from 'gatsby';
 import { CookiesProvider } from 'react-cookie';
 import GlobalStyles from './src/styles/GlobalStyles';
 import Typography from './src/styles/Typography';
+import 'normalize.css/normalize.css';
 import './src/styles/global.css';
 
 import { PageContextProvider, IPageContext } from './src/context/pageContext';

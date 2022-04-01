@@ -4,6 +4,7 @@ import { CookiesProvider } from 'react-cookie';
 import GlobalStyles from './src/styles/GlobalStyles';
 import Typography from './src/styles/Typography';
 import { PageContextProvider, IPageContext } from './src/context/pageContext';
+import 'normalize.css/normalize.css';
 import './src/styles/global.css';
 
 type ReactProps<T extends Element> = React.DetailedHTMLProps<React.HTMLAttributes<T>, T>;

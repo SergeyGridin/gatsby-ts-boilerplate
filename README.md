@@ -4,5 +4,4 @@
 
 - [ ] SVG
 - [ ] css reset
-- [ ] react cookie
 - [ ]

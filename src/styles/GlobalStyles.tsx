@@ -45,15 +45,6 @@ const GlobalStyles = createGlobalStyle`
         box-sizing: inherit;
   }
 
-  h1,h2,h3,h4,h5,p{
-    margin: 0
-  }
-
-  p {
-    padding: 0;
-    margin: 0
-  }
-
   button, input[type="submit"], input[type="reset"] {
     background: none;
     color: inherit;
@@ -62,16 +53,6 @@ const GlobalStyles = createGlobalStyle`
     font: inherit;
     cursor: pointer;
     outline: inherit;
-  }
-
-  body {
-    padding: 0;
-    margin: 0;
-    scroll-behavior: smooth;
-  }
-
-  ul {
-    padding: 0;
   }
 
   a {
